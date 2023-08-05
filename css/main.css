@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    
+} 
+
+
+body {
+    margin: 0;
+    font-family: 'Oswald', normal;
+    align-items: center;
+}
+.conteiner {
+   max-width: 1100px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.none {
+    display: none !important;
+} 
+
+/* Header*/
+
+.header {
+    margin: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 150vh;
+    background-color:#f6f2ef;
+    background-image: url("./../img/header/header-bg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+       
+}
+.busines-card{
+  margin-top: 13%;
+  margin-left: 65%;
+}
+.header-line {
+  width: 287px;
+  height: 97px;
+  position: absolute;
+  
+}
+.header-title {
+    margin: 1%, 2%;
+    position:absolute; 
+    width: 285px;
+       
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 13px;
+    
+    
+    color: rgba(0, 0, 0, 0.64);
+    
+}
+
+.header-subtitle {
+    position: absolute;
+    margin: 4%;
+    width: 172px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+          
+    color: #fcfafaf7;
+}
+/* расположение кнопок ссылок */
+.header-button {
+position: absolute; 
+margin-top: 7%;
+margin-left: 15%;
+font-size: 20px;
+word-spacing: 60px;
+display: flex;
+color: #563E2F;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+/* внешний облик кнопок ссылок*/
+.head-button{
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    border: 1px solid #563E2F;
+    border-radius: 60px;
+    color: #563e2f;
+    line-height: 28px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+/* поведение кнопок при наведении курсора*/
+.head-button:hover{
+    background-color: #9A8C7C;
+    color: #fefdfc;
+    border: 1px solid #9A8C7C;
+}
+.header-logo{
+position: absolute;
+width: 99px;
+height: 99px;
+margin-top: 10%;
+margin-left: 15%;
+background: url("./../img/header/logo.png");
+}
+
+
+.services-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;/*  перенос на новую строчку*/
+    justify-content: space-between; /* размещение по краям*/
+} 
+/* Блок Услуги*/
+.services {
+    background-color: #f6f2ef;
+    padding-top: 0;
+    padding-bottom: 38px;
+}
+.services-header {
+    margin-top: 0;
+    padding-top: 30px;
+    font-weight: 300px;
+    font-size: 30px;
+    line-height: 17px;
+    margin-bottom: 0;
+    
+    color: #563E2F;
+}
+.card {
+    margin-top: 24px;
+    background:  #E5DBCE;
+    max-width: 421px;
+    padding: 0px;
+    height: 190px; 
+    border: 2px solid #563E2F;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 9px;
+    text-align: center;
+}
+.card:last-child, .card:nth-last-child(2){
+    height: 190px; 
+    margin-top: 34px;
+}
+
+
+.card-title {
+    margin: 0;
+    margin-bottom: 7px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 47px;
+    text-align: center;
+    color: #563E2F;
+}
+.card p {
+    font-weight: 300px;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #563E2F;
+    display: inline-block;
+   
+}
+/* блок портфолио*/
+#portfolio{
+    margin-top: 40px;
+}
+        
+.cards-works{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+      
+}
+
+.card-w {
+    /* border: 1px solid #563E2F; */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+     margin-bottom: 30px;
+     
+     
+}
+#avtor{
+    position: absolute;
+    top: 360px;
+    left: 54px;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    color: #563E2F;
+      
+}
+#avtor p{
+    margin-top:0px ;
+    margin-bottom: 0;
+}
+/* footer */
+.footer {
+    background: #9A8C7C;
+    padding-top: 45px;
+    padding-bottom: 100px;
+    color: #FFFFFF;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.footer-col {
+    max-width: 350px;
+    flex-grow:1;
+}
+.footer-copyright {
+    line-height: 1.3;
+}
+.footer-copyright-name {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer-copyright p {
+    margin: 0    ;
+    margin-bottom: 15px;
+    font-size: 16;
+    font-weight: 500;
+}
+.footer-icons {
+    
+}
+.footer-icons p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3%;
+    align-items: center;
+}
+.footer-icons-row {
+    display: flex;
+    align-items: center;
+}
+.footer-icons-row >* + *{
+    margin-left: 30px;
+}
+.footer-button {
+    display: inline-block;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+
+    color: #FFFFFF;
+    line-height: 44px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    
+}
+.footer-button:hover{
+    background-color: #fcfbfa;
+    color: #563E2F;
+}
+.footer-contacts p {
+    margin: 16px 0;
+    
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.3;
+}
