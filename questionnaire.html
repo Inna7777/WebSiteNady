@@ -4,14 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Анкета</title>
+  <title>Анкета</title>  
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main_quest.css">
   <link rel="stylesheet" href="./css/media.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>*/
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-  
+  <div class="conteiner conteiner_quest">
+         <div class="services-header title">
+        <p  >Анкета</p>
+        </div>
+      <div class="servises-line">
+      <img src ="./img/services/service_line.svg" alt="S_lines">
+      </div>
+ <form action="formdata.php" method="POST" name="forma" >
+    <div class="fields-name">
+      <fieldset>
+      <legend class="services-header">Ввод личных данных</legend>
+      <p><label >Введите Ваше имя :  <input type="text" name="name" maxlength="30"  id ="name"></label></p>
+      <p><label >Введите Ваш mail :  <input type="email" name="name" maxlength="30" id ="name"></label></p>
+      </fieldset>
+    </div>
+    <div class="checkbox"></div>
+     <fieldset>    
+      <legend class ="services-header">Заказ</legend>
+      <p>Дизайн какого помещения нужен</p>     
+<p><input  type="checkbox" id="chec1" name="chec"><label for="chec1">Квартиру(дом)</label>
+<label><input type="checkbox" name="kitchen">Кухню</label>
+<label><input type="checkbox" name="corridor">Коридор</label>
+</p>
+<p>
+<label><input type="checkbox" name="room">Комнату</label>
+<label><input type="checkbox" name="bathroom">Cанузел</label>
+<label><input type="checkbox" name="balcony">Балкон(лоджия)</label>
+<label><input type="checkbox" name="ofice">Офис</label>
+</p>
+    </div>
+    </fieldset>
+<legend>Заказ</legend>
+<p>Хотите вещь на заказ?</p>
+<p><label>Да<input type="radio" name="tame" value="yes" checked></label><label>Нет<input type="radio" name="tame" value="no"></label></p>
+<p>Что Вы хотите заказать?</p>
+<p><label><input type="checkbox" name="pikch">Картина</label>
+<label><input type="checkbox" name="skaf">Шарф</label>
+<label><input type="checkbox" name="singk">Платок</label>
+</p>
+<p>Размер:</p>
+<p>
+<select name="saze" size="1">
+<option>50x50</option>
+<option>70x70</option>
+<option selected>80x80</option>
+<option>90x90</option>
+<option>100x100</option>
+</select>
+</fieldset>
+</p>
+<p><label for="text">Дополнительные пожелания</label></p>
+<p><textarea name="text" cols="110" rows="15" id="text">
+</textarea></p>
+<p><input type="reset" name="reset" value="Очистить">     
+    <input type="button" onclick="getValue();" name="submit" value="Отправить"></p>
+ </form>
+ </div>
 </body>
 </html>
