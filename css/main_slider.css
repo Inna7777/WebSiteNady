@@ -1,0 +1,11 @@
+.slider_show{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+}
+
+.slider_show .slide-img{
+
+  width: 25%;
+}

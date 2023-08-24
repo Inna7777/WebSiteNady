@@ -21,7 +21,7 @@ max-width: 100%;
     position: relative;
 
 }
-.conteiner p {
+.conteiner p { /* стилизация абзаца */
   font-weight: 300px;
   font-size: 22px;
   line-height: 22px;
@@ -44,14 +44,42 @@ max-width: 100%;
   width:  300px;
   height: 30px;
  }
+ .checkbox_order,.checkbox_style ,.checkbox_color{
+  margin-top: 20px;
+ }
+ 
+
  label {
   margin-left: 30px;
-  color: #7f3a10;;
- }
- input[type="checkbox"] {
-  height: 20px;
-  width: 20px;
+  color: #7f3a10;
+  
+  }
+
+ 
+ 
+ /* Задаем цвет галочки */
+input[type="checkbox"]:checked + label::before {
+  content: "\2713"; /* Код символа галочки */
+  color: rgb(244, 120, 26); /* Цвет галочки */
+  font-weight: bold;
   
  }
- 
- 
+
+/* Скрываем оригинальную галочку */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Стилизуем лейбл */
+label::before {
+  content: ""; /* Очищаем содержимое псевдоэлемента */
+  display: inline-block; /* Делаем элемент блочным для установки размеров */
+  width: 20px; /* Ширина элемента */
+  height: 20px; /* Высота элемента */
+  border: 1px solid rgb(142, 35, 35); /* Граница элемента */
+  background-color:rgb(255, 253, 253); /* Цвет фона элемента */
+  margin-right: 10px; /* Отступ от текста лейбла */
+}
+a{
+ color:  #7f3a10;  
+}
