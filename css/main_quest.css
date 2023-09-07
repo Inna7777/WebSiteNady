@@ -80,6 +80,20 @@ label::before {
   background-color:rgb(255, 253, 253); /* Цвет фона элемента */
   margin-right: 10px; /* Отступ от текста лейбла */
 }
+/* стилизуем выбор цветовой гаммы*/
+ .checkbox_color p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .checkbox_color .paragraph {
+  font-weight: bold;
+  padding-bottom: 15px;
+  color:#636937;
+  
+ }
+
 a{
  color:  #7f3a10;  
 }
